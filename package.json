@@ -38,6 +38,7 @@
     "dart_js_facade_gen": "index.js"
   },
   "scripts": {
+    "postinstall": "npm run prepare",
     "prepare": "gulp compile",
     "test": "gulp test",
     "release": "npm-release"
@@ -45,6 +46,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/dart-lang/js_facade_gen.git"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   },
   "keywords": [
     "typescript",
